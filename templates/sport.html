@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+{% load static %}
+<script src="{% static 'node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js' %}"></script>
+<script src="{% static 'node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js' %}"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Kun.uz</title>
+    <link rel="stylesheet" href="{% static 'css/maqola.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+{#    <link rel="stylesheet" href="{% static 'templates/app_js.js' %}">#}
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+{#navbar#}
+
+    {% if request.user.is_authenticated %}
+    <div class="navbar">
+        <div class="container">
+            <a href="" class="brand">VOYAGE VISTA</a>
+            <ul class="nav-links">
+                <li><a href="{% url 'world' %}" class="active">Home</a></li>
+                <li><a href="{% url 'sport' %}">Our services</a></li>
+                <li><a href="{% url 'local' %}">Fotos</a></li>
+                <li><a href="{% url 'maqola' %}">Contact</a></li>
+                <li><a href="{% url 'logout' %}">Log out</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    {% else %}
+        <div class="navbar">
+            <div class="container">
+                <a href="" class="brand">VOYAGE VISTA</a>
+                <ul class="nav-links">
+                    <li><a href="{% url 'world' %}" class="active">Home</a></li>
+                    <li><a href="{% url 'sport' %}">Our services</a></li>
+                    <li><a href="{% url 'local' %}">Fotos</a></li>
+                    <li><a href="{% url 'maqola' %}">Contact</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'register' %}">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    {#navbar#}
+
+{#hero#}
+    <div id="hero">
+        <div class="container">
+            <h1 class="heading-xl"><span id="hero-titles">Our services</span></h1>
+            <a href="#" class="scroll-to-down"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </div>
+{#hero#}
+
+{#services#}
+    <section id="services">
+        <div class="container">
+{#            section introdan keyin data-aos="fade-up" ni qo'yish kerak edi'#}
+            <div class="section-intro">
+                <h1 class="heading-2">Our services</h1>
+            </div>
+            <div class="grid three-col-grid">
+                {% for s_new in s_news %}
+                <div class="service">
+                    <div class="image1"><img src="{{ s_new.imageURL }}"></div>
+                    <h3 class="heading-3">{{ s_new.title }}</h3>
+                    <p>{{ s_new.description }}</p>
+                    <p>{{ s_new.created_at }}</p>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+
+{#services#}
+{#contact #}
+
+{#footer#}
+    <footer>
+        <div class="container">
+            <p>Copyright</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+{#    typed js#}
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="../templates/app_js.js"></script>
+    <script src="app_js.js"></script>
+</body>
+</html>

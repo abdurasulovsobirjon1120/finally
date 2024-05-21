@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+{% load static %}
+<script src="{% static 'node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js' %}"></script>
+<script src="{% static 'node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js' %}"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Kun.uz</title>
+    <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <{% if request.user.is_authenticated %}
+    <div class="navbar">
+        <div class="container">
+            <a href="" class="brand">VOYAGE VISTA</a>
+            <ul class="nav-links">
+                <li><a href="{% url 'world' %}" class="active">Home</a></li>
+                <li><a href="{% url 'sport' %}">Our services</a></li>
+                <li><a href="{% url 'local' %}">Fotos</a></li>
+                <li><a href="{% url 'maqola' %}">Contact</a></li>
+                <li><a href="{% url 'logout' %}">Log out</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    {% else %}}
+        <div class="navbar">
+            <div class="container">
+                <a href="" class="brand">VOYAGE VISTA</a>
+                <ul class="nav-links">
+                    <li><a href="{% url 'world' %}" class="active">Home</a></li>
+                    <li><a href="{% url 'sport' %}">Our services</a></li>
+                    <li><a href="{% url 'local' %}">Fotos</a></li>
+                    <li><a href="{% url 'maqola' %}">Contact</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'register' %}">Register</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    {% endif %}}
+    {#navbar#}
+
+{#hero#}
+    <div id="hero">
+        <div class="container">
+            <h1 class="heading-xl"><span id="hero-titles">Creative agency</span></h1>
+            <a href="#" class="scroll-to-down"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </div>
+{#hero#}
+{#backend#}
+    {#work#}
+    <section id="work">
+        <div class="container">
+            <div class="section-intro">
+                <h1 class="heading-1">Picturesque Place</h1>
+                <h1 class="custom_heading">Bizning vazifamiz - mijozlarimizga eng yaxshi sayohat tajribalarini taqdim etishdir . Dunyoning eng go'zal joylariga sayohat qilishni oson , xavfsiz va zavqli qilish uchun fidokorlik bilan ishlaymiz . Har bir sayohatni esda qolarli , boy va unutilmas qilishga intilamiz , shu bilan birga har bir mijozning individual ehtiyoj va istaklarini inobatga olamiz . Bizning maqsadimiz - mijozlarimizni yangi madaniyatlar , qiziqarli joylar va unutilmas sarguzashtlar bilan tanishtirish orqali dunyoni kashf qilish imkoniyatlarini taqdim etishdir .</h1>
+            </div>
+            <a href="#" class="grid two-col-grid">
+                {% for w_new in w_news %}
+                <div class="project">
+                    <img src="{{ w_new.imageURL }}">
+                    <div class="overlay">
+                        <div>
+                            <h2 class="heading-2">{{ w_new.title }}</h2>
+                            <h2 class="heading-3">Author : {{ w_new.author }}</h2>
+                            <p>{{ w_new.description }}</p>
+                            <p>Yaratilgan vaqti : {{ w_new.created_at }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </a>
+        </div>
+    </section>
+    {#work#}
+
+{#footer#}
+    <footer>
+        <div class="container">
+            <p>Copyright</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+{#    typed js#}
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="../templates/app_js.js"></script>
+    <script src="app_js.js"></script>
+</body>
+</html>

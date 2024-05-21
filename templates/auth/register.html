@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Kun.uz</title>
+    <link rel="stylesheet" href="{% static 'css/auth/register.css' %}">
+</head>
+<body>
+    <div class="container">
+        <form method="post">
+            {% csrf_token %}
+            <h1>Register Page</h1>
+            <div class="input-box">
+                <label for="">Email</label>
+                <input name="email" , type="email" placeholder="Emailingizni kiriting">
+            </div>
+            <div class="input-box">
+                <label for="">First name</label>
+                <input name="first_name" , type="text" placeholder="Ismingizni kiriting">
+            </div>
+            <div class="input-box">
+                <label for="">Surname name</label>
+                <input name="last_name" , type="text" placeholder="Familiyangizni kiriting">
+            </div>
+            <div class="input-box">
+                <label for="">Password</label>
+                <input name="password1" , type="password" placeholder="Passwordingizni kiriting">
+            </div>
+            <div class="input-box">
+                <label for="">Conf password</label>
+                <input name="password2" , type="password" placeholder="Passwordingizni qayta kiriting">
+            </div>
+            <button type="submit" class="btn">Send</button>
+            <div class="registr-link">
+                <p>I have an account <a href="{% url 'login' %}">Login</a> </p>
+        </form>
+
+    </div>
+
+</body>
+</html>

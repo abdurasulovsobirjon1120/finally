@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Kun.uz</title>
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">11 V SAXTO</div>
+        <ul>
+            <li><a href="{% url 'maqola' %}">Home</a></li>
+            <li><a href="{% url 'world' %}">World news</a></li>
+            <li><a href="{% url 'local' %}">Local news</a></li>
+            <li><a href="{% url 'sport' %}">Sport news</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'register' %}">Register</a></li>
+        </ul>
+{#    <a href="{% url 'world' %}">World news</a>#}
+{#    <a href="{% url 'local' %}">Local news</a>#}
+{#    <a href="{% url 'sport' %}">Sport news</a>#}
+{#    <a href="{% url 'login' %}">Login</a>#}
+{#    <a href="{% url 'register' %}">Register</a>#}
+</div>
+
+
+</body>
+</html>

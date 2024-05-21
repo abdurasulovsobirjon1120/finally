@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Kun.uz</title>
+    <link rel="stylesheet" href="{% static 'css/auth/login.css' %}">
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <form method="post">
+            <h1>Login page</h1>
+
+            {% csrf_token %}
+            <div class="input-box">
+                <label for="">Email</label>
+            <input name="email" , type="email" placeholder="Emailingizni kiriting"><i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <label for="">Password</label>
+            <input name="password" , type="password" placeholder="Passwordingizni kiriting"><i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">Remember me
+                </label>
+                <a href="#">Forgot Password ?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="registr-link">
+                <p>Don't have an account <a href="{% url 'register' %}">Register</a> </p>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
