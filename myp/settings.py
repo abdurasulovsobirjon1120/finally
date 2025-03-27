@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     # custom apps
     'myapp',
     'account',
-    'fontawesomefree'
 ]
 
 MIDDLEWARE = [
@@ -81,19 +80,9 @@ WSGI_APPLICATION = 'myp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'final_db',
-        'USER': 'finally',
-        'PASSWORD': '2006',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
     }
-
-
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
 }
 
 
