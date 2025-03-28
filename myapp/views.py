@@ -18,7 +18,7 @@ def maqola(request):
 
 
 def world_news(request):
-    w_news = Maqola.objects.filter(tag='world').order_by('-id')
+    w_news = Maqola.objects.filter(tag='home').order_by('-id')
     context = {
         'w_news': w_news
     }
@@ -30,7 +30,7 @@ def world_news(request):
 
 
 def local_news(request):
-    l_news = Maqola.objects.filter(tag='local').order_by('-id')
+    l_news = Maqola.objects.filter(tag='fotos').order_by('-id')
     context = {
         'l_news': l_news
     }
@@ -42,7 +42,7 @@ def local_news(request):
 
 
 def sports_news(request):
-    s_news = Maqola.objects.filter(tag='sport').order_by('-id')
+    s_news = Maqola.objects.filter(tag='our_service').order_by('-id')
     context ={
         's_news': s_news
     }

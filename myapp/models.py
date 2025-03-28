@@ -4,21 +4,21 @@ from django.db import models
 # Create your models here.
 
 class Maqola(models.Model):
-    WORLD = 'world'
-    LOCAL = 'local'
-    SPORT = 'sport'
+    HOME = 'home'
+    FOTOS = 'fotos'
+    OUR_SERVICE = 'our_service'
 
     TAG = (
-        ('world' , WORLD),
-        ('local' , LOCAL),
-        ('sport' ,SPORT)
+        ('home' , HOME),
+        ('fotos' , FOTOS),
+        ('our_service' ,OUR_SERVICE)
     )
 
 
     title = models.CharField(max_length=100)
     author = models.CharField(max_length=50 ,null=True , blank=True)
     image = models.ImageField()
-    tag = models.CharField(max_length=10, choices=TAG)
+    tag = models.CharField(max_length=15, choices=TAG)
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
