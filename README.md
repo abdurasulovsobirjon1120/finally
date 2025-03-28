@@ -1,50 +1,131 @@
 **Linux yoki mac operatsion tizimida**
-1. yangi folder ochish (test)
-2. terminalda test papkasini ochish
-3. git  clone https://github.com/abdurasulovsobirjon1120/finally.git   _ # loyihani clonlash_
 
+* *Yangi folder ochish: **test***
 
-**1. Virtual environment va kutubxonalarni o‘rnatish:**
-4. pip3 install virtualenv    #_ virtual env ni install qilish_
-5. python3 -m venv venv    # _virtual env ni yaratish_
-6. source venv/bin/activate
+* *Terminalda **test** papkasini ochish*
 
+* *Loyihani klonlash:*
 
-**2. Loyihaga o‘tish va kutubxonalarni o‘rnatish:**
-7. cd finally      _# finally papkasiga kirish_
-8. pip install -r requirements.txt    _# kutubxonalarni install qilish_
+   git clone https://github.com/abdurasulovsobirjon1120/finally.git
 
+---
 
-**3. Django migratsiyalarini bajarish:**
-10. python3 manage.py makemigrations
-11. python3 manage.py migrate    _# migratsiyalarni amalga oshirish_
+**1\. Virtual environment va kutubxonalarni o‘rnatish:** 
 
+* *Virtual environmentni o‘rnatish:*
 
-**4. Serverni ishga tushirish:**
-12. python3 manage.py runserver
+pip3 install virtualenv
 
+* *Virtual environment yaratish:*
 
-**Windows operatsion timida**
-1. yangi folder ochish (test)
-2. terminalda test papkasini ochish
-3. git  clone https://github.com/abdurasulovsobirjon1120/finally.git  # loyihani clonlash
+   python3 \-m venv venv  
+    
+* *Virtual environmentni faollashtirish:*
 
+   source venv/bin/activate
 
-**1. Virtual environment va kutubxonalarni o‘rnatish:**
-pip install virtualenv    _# virtualenv ni o‘rnatish_
-python -m venv venv   _ # virtual environment yaratish_
-venv\Scripts\activate    _# virtual environmentni faollashtirish_
+---
 
+**2\. Loyihaga o‘tish va kutubxonalarni o‘rnatish:** 
 
-**2. Loyihaga o‘tish va kutubxonalarni o‘rnatish:**
-cd finally  # finally papkasiga kirish
-pip install -r requirements.txt   _ # kutubxonalarni install qilish_
+* ***finally** papkasiga kirish:*
 
+cd finally
 
-**3. Django migratsiyalarini bajarish:**
+* *Kutubxonalarni o‘rnatish:*
+
+   pip install \-r requirements.txt
+
+---
+
+**3\. Django migratsiyalarini bajarish:** 
+
+* *Migratsiyalar yaratish:*
+
+python3 manage.py makemigrations
+
+---
+
+* *Migratsiyalarni amalga oshirish:*  
+  python3 manage.py migrate
+
+---
+
+**4\. Serverni ishga tushirish:** 
+
+* Django serverni ishga tushirish:
+
+python3 manage.py runserver
+
+**5\. Gunicorn orqali ishga tushirish:** 
+
+* *Gunicornni o’rnatish:*  
+  pip3 install gunicorn  
+* Gunicornda run qilish  
+  gunicorn \--bind 0.0.0.0:8000 myp.wsgi:application
+
+---
+
+**Windows operatsion tizimida**
+
+* *Yangi folder ochish: **test***  
+* Terminalda **test** papkasini ochish  
+* Loyihani klonlash:
+
+   git clone https://github.com/abdurasulovsobirjon1120/finally.git
+
+---
+
+**1\. Virtual environment va kutubxonalarni o‘rnatish:** 
+
+* *Virtual environmentni o‘rnatish:*
+
+pip install virtualenv
+
+* *Virtual environment yaratish:*  
+   
+
+python \-m venv venv
+
+* Virtual environmentni faollashtirish:
+
+   venv\\Scripts\\activate
+
+---
+
+**2\. Loyihaga o‘tish va kutubxonalarni o‘rnatish:** 7\. 
+
+* ***finally** papkasiga kirish:*
+
+cd finally
+
+* *Kutubxonalarni o‘rnatish:*
+
+   pip install \-r requirements.txt
+
+---
+
+**3\. Django migratsiyalarini bajarish:** 
+
+* *Migratsiyalar yaratish:*
+
 python manage.py makemigrations
-python manage.py migrate    _# migratsiyalarni amalga oshirish_
 
+* *Migratsiyalarni amalga oshirish:*
 
-**4. Serverni ishga tushirish:**
-python manage.py runserver
+python manage.py migrate  
+---
+
+**4\. Serverni ishga tushirish:** 
+
+* *Django serverni ishga tushirish:*
+
+python manage.py runserver  
+---
+
+**5\. Gunicorn orqali ishga tushirish:** 
+
+* *Gunicornni o’rnatish:*  
+  pip install gunicorn  
+* Gunicornda run qilish  
+  gunicorn \--bind 0.0.0.0:8000 myp.wsgi:application
