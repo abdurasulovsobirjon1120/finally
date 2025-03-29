@@ -1,12 +1,12 @@
 **Linux yoki mac operatsion tizimida**
 
-* *Yangi folder ochish: **test***
+* *Yangi folder ochish: mkdir **test***
 
-* *Terminalda **test** papkasini ochish*
+* *cd **test** *
 
 * *Loyihani klonlash:*
 
-   git clone https://github.com/abdurasulovsobirjon1120/finally.git
+   git clone git@github.com:abdurasulovsobirjon1120/finally.git
 
 ---
 
@@ -68,11 +68,13 @@ python3 manage.py runserver
 
 **Windows operatsion tizimida**
 
-* *Yangi folder ochish: **test***  
-* Terminalda **test** papkasini ochish  
+* *Yangi folder ochish: mkdir **test***
+
+* *cd **test** *
+  
 * Loyihani klonlash:
 
-   git clone https://github.com/abdurasulovsobirjon1120/finally.git
+   git clone git@github.com:abdurasulovsobirjon1120/finally.git
 
 ---
 
