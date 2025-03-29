@@ -2,7 +2,7 @@
 
 * *Yangi folder ochish: mkdir **test***
 
-* *cd **test** *
+cd **test** 
 
 * *Loyihani klonlash:*
 
@@ -70,7 +70,7 @@ python3 manage.py runserver
 
 * *Yangi folder ochish: mkdir **test***
 
-* *cd **test** *
+ *cd **test** 
   
 * Loyihani klonlash:
 
