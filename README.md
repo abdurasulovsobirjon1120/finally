@@ -33,15 +33,15 @@ Agar SSH kalitlaringiz bo‘lmasa, yangi kalit yarating:
 | ssh-keygen \-t rsa \-b 4096 \-C "[your\_email@example.com](mailto:your_email@example.com)"(3 marta enterni bosing) |
 | :---- |
 | cat /home/your\_pc\_name/.ssh/id\_rsa.pub |
-| ![][image4] |
+| [![][image4]](https://drive.google.com/file/d/10XdFoZE6U0h38nIueosmQzo8xAV6G3Jr/view?usp=drive_link) |
 
 | Ommaviy kalitni GitHub/GitLab/Bitbucket repozitoriyingizga qo‘shing. |
 | ----- |
-| ![][image5] |
+| [![][image5]](https://drive.google.com/file/d/1cJcEHZtjbytKv6AH_7XitV7_Ix4p3x75/view?usp=drive_link) |
 
 | git clone [git@github.com](mailto:git@github.com):your-repo/django-project.git |
 | ----- |
-| ![][image6] |
+| [![][image6]](https://drive.google.com/file/d/1YI0xdcepDUl1GfHpVOebEKwuvlc1i0YW/view?usp=drive_link) |
 
 **4\. Django o‘rnatish va ishga tushirish**  
 cd django-project  
@@ -56,9 +56,9 @@ pip install gunicorn
 
 | gunicorn \--bind 0.0.0.0:8000 your\_project.wsgi:application |
 | ----- |
-| ![][image7] |
-| ![][image8] |
-| ![][image9] |
+| [![][image7]](https://drive.google.com/file/d/1K_kWzG7rU8IyATAkMNq8GGaG6orq5FhB/view?usp=drive_link) |
+| [![][image8]](https://drive.google.com/file/d/1VyyruEKVq-eZZx8OVzOJBtznHuXSpSrj/view?usp=drive_link) |
+| [![][image9]](https://drive.google.com/file/d/1aRP3a9jrcLkd69OoHlbeEoVOGQsM-M0q/view?usp=drive_link) |
 
 #### 
 
@@ -86,14 +86,14 @@ server {
 
 | Nginx sozlash (HTTP) |
 | ----- |
-| ![][image10] |
+| [![][image10]](https://drive.google.com/file/d/1fv5VU54ofOCVHu7rxsuBW30Xtg8cHiLT/view?usp=drive_link) |
 
 Sozlamalarni qo‘llash va Nginx-ni qayta ishga tushirish:  
 sudo ln \-s /etc/nginx/sites-available/django /etc/nginx/sites-enabled/
 
 | sudo systemctl restart nginx |
 | ----- |
-| ![][image11] |
+| [![][image11]](https://drive.google.com/file/d/1Haexfvvu5coRvoSmf-1TbqsX_ZV6QQFH/view?usp=drive_link) |
 
 6\. HTTPS sozlash (o‘z-o‘zini imzolagan sertifikat)
 
@@ -119,15 +119,15 @@ server {
 
 | HTTPS sozlash (o‘z-o‘zini imzolagan sertifikat) |
 | ----- |
-| ![][image12] |
+| [![][image12]](https://drive.google.com/file/d/1ywRSkI-FqGmM-yBBT057pCC0xRIzgaeM/view?usp=drive_link) |
 
 Nginx-ni qayta ishga tushiramiz:  
 sudo systemctl restart nginx
 
 | Loyihani HTTPS orqali ishga tushirish |
 | ----- |
-| ![][image13] |
-| ![][image14] |
+| [![][image13]](https://drive.google.com/file/d/1DPeR5NFAIIMuL6Y7f5fzfsWzrujvKoVf/view?usp=drive_link) |
+| [![][image14]](https://drive.google.com/file/d/1MIlGuZ7ipVaTjsz33hmReMiD3nXgSOqw/view?usp=drive_link) |
 
 Endi xizmatga HTTPS orqali ulanishingiz mumkin\! 
 
