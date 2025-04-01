@@ -1,4 +1,4 @@
-### **Loyihaning .docs faylini havola orqali ko'rishingiz mumkin!** 
+### **Loyihaning dokumentatsiya faylini havola orqali olishingiz mumkin!** 
 ###
 | [![][HAVOLA]](https://docs.google.com/document/d/1Jf8eEsm5eoFNnW4smyYu-VLFz9wyPs9JaMJEUEFTXc8/edit?usp=sharing) |
 
