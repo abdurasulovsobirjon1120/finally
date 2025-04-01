@@ -43,22 +43,24 @@ Agar SSH kalitlaringiz bo‘lmasa, yangi kalit yarating:
 | ----- |
 | [![][image5]](https://drive.google.com/file/d/1cJcEHZtjbytKv6AH_7XitV7_Ix4p3x75/view?usp=drive_link) |
 
-| git clone [git@github.com](mailto:git@github.com):your-repo/django-project.git |
+| git clone git@github.com:abdurasulovsobirjon1120/finally.git |
 | ----- |
 | [![][image6]](https://drive.google.com/file/d/1YI0xdcepDUl1GfHpVOebEKwuvlc1i0YW/view?usp=drive_link) |
 
 **4\. Django o‘rnatish va ishga tushirish**  
-cd django-project  
+cd finally  
 python3 \-m venv venv  
 source venv/bin/activate  
 pip install \-r requirements.txt  
-python manage.py migrate  
-python manage.py collectstatic \--noinput
+python3 manage.py makemigratitons
+python3 manage.py migrate 
+python3 manage.py collectstatic \--noinput
+
 
 Gunicorn bilan Django serverini ishga tushirish:  
 pip install gunicorn
 
-| gunicorn \--bind 0.0.0.0:8000 your\_project.wsgi:application |
+| gunicorn \--bind 0.0.0.0:8000 myp.wsgi:application |
 | ----- |
 | [![][image7]](https://drive.google.com/file/d/1K_kWzG7rU8IyATAkMNq8GGaG6orq5FhB/view?usp=drive_link) |
 | [![][image8]](https://drive.google.com/file/d/1VyyruEKVq-eZZx8OVzOJBtznHuXSpSrj/view?usp=drive_link) |
