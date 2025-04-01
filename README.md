@@ -1,5 +1,5 @@
 **Loyihaning .docs faylini havola orqali ko'rishingiz mumkin!**
-| [![][HAVOLA]]([https://drive.google.com/file/d/1wZFapC8R69FMCfB9CGG1yrWLoI-3B-yV/view?usp=drive_link](https://docs.google.com/document/d/1Jf8eEsm5eoFNnW4smyYu-VLFz9wyPs9JaMJEUEFTXc8/edit?usp=sharing)) |
+| [![][image3]](https://docs.google.com/document/d/1Jf8eEsm5eoFNnW4smyYu-VLFz9wyPs9JaMJEUEFTXc8/edit?usp=sharing) |
 
 ### **Django xizmatini Nginx va HTTPS bilan ishga tushirish bo‘yicha qo‘llanma**
 
