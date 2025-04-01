@@ -7,7 +7,7 @@ VirtualBox/VMware yuklab oling va o‘rnating yoki Windows bo‘lsa, WSL2 dan fo
  Kamida 4 GB RAM, 4 ta protsessor (CPU) va 40 GB disk hajmi ajrating.  
  Virtual mashinani ishga tushiring va Ubuntu o‘rnating.
 
-https://drive.google.com/uc?id=1Dia9tenft5wTeebvYQIZLJfHVdmI_s8E
+
 | Birinchi topshiriq uchun linux ubuntu 22.04 operatsion tizimini ishga tushirish kerak. |
 | :---- |
 | https://drive.google.com/uc?id=1Dia9tenft5wTeebvYQIZLJfHVdmI_s8E |
@@ -15,14 +15,14 @@ https://drive.google.com/uc?id=1Dia9tenft5wTeebvYQIZLJfHVdmI_s8E
 #### 
 
 #### **2\. Kerakli paketlarni o‘rnatish**
-[image2]: https://drive.google.com/uc?id=11O1j3N0tQPDH77JyrisGsQUpRtKzPZsp
 | sudo apt update && sudo apt upgrade \-y |
 | ----- |
-| ![][image2] |
+| https://drive.google.com/uc?id=11O1j3N0tQPDH77JyrisGsQUpRtKzPZsp |
 
 | sudo apt install \-y git nginx python3 python3-venv python3-pip openssl |
 | ----- |
-| ![][image3] |
+| [![][image3]](https://drive.google.com/file/d/1wZFapC8R69FMCfB9CGG1yrWLoI-3B-yV/view?usp=drive_link) |
+|  |
 
 #### 
 
