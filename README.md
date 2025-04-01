@@ -137,7 +137,9 @@ sudo systemctl restart nginx
 
 Endi xizmatga HTTPS orqali ulanishingiz mumkin\! 
 
-
+###
+###
+###
 **Linux yoki mac operatsion tizimida**
 
 * *Yangi folder ochish: mkdir **test***
