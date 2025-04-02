@@ -52,12 +52,11 @@ cd finally
 python3 \-m venv venv  
 source venv/bin/activate  
 pip install \-r requirements.txt  
-
 python3 manage.py makemigratitons
-
 python3 manage.py migrate 
-
 python3 manage.py collectstatic \--noinput
+
+
 
 
 Gunicorn bilan Django serverini ishga tushirish:  
@@ -141,12 +140,19 @@ sudo systemctl restart nginx
 Endi xizmatga HTTPS orqali ulanishingiz mumkin\! 
 
 ###
+
 ###
+
 ###
+
 ###
+
 ###
+
 ###
+
 ###
+
 ###
 **Loyihani ishga tushirish uchun qo'llanma(_4-topshiriq uchun_)**
 ###
