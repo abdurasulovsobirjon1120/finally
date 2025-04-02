@@ -140,6 +140,14 @@ Endi xizmatga HTTPS orqali ulanishingiz mumkin\!
 ###
 ###
 ###
+###
+###
+###
+###
+###
+**Loyihani ishga tushirish uchun qo'llanma(_4-topshiriq uchun_)**
+###
+###
 **Linux yoki mac operatsion tizimida**
 
 * *Yangi folder ochish: mkdir **test***
@@ -198,6 +206,7 @@ python3 manage.py makemigrations
 * Django serverni ishga tushirish:
 
 python3 manage.py runserver
+control + C
 
 **5\. Gunicorn orqali ishga tushirish:** 
 
